@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header class="header">
+    <div class="logo">
+        <span class="dot"></span> Bridge Collective
+      </div>
+      <button class="menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+</header>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>A classroom for every child</h1>
+            <p>We fund the schools, train the teacher, andmeasure what works - so every child we reach today becomes a graduate tomorrow.</p>
+        </div>
+        <div class="grid-card">
+            <div class="stat-card">
+                <div class="icon">*</div>
+                <div class="number">2.4M</div>
+            </div>
+            <div class="end-card">
+                <div class="title">Student reach</div>
+                <div class="text">Across 31 countries, since 2011.</div>
+            </div>
+        </div>
+        <div class="grid-card">
+            <div class="stat-card">
+                <div class="icon">/</div>
+                <div class="number">1,284</div>
+            </div>
+            <div class="end-card">
+                <div class="title">School partnered</div>
+                <div class="text">In 14 countries, from Kenya to Guatamala.</div>
+            </div>
+        </div>
+        <div class="grid-card">
+            <div class="stat-card">
+                <div class="icon">-</div>
+                <div class="number">38K</div>
+            </div>
+            <div class="end-card">
+                <div class="title">Teachers Trained</div>
+                <div class="text">Equiped with modern tools and methodology.</div>
+            </div>
+        </div>
+        <div class="grid-card">
+            <div class="stat-card">
+                <div class="icon">/</div>
+                <div class="number">3.1*</div>
+            </div>
+            <div class="end-card">
+                <div class="title">Graduation Lift</div>
+                <div class="text">Partner schools outperform national averages 3*</div>
+            </div>
+        </div>
+    </div>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    background-color: #2557ff;
+    display: flex;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1440px;   
+    position: relative;
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .logo .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .hero{
+    grid-row: span 2;
+    padding: 160px 50px 60px 60px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+  }
+  .hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 440px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .grid-card {
+    padding: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .stat-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .icon {
+    font-size: 2rem;
+    line-height: 0.7;
+    font-weight: 300;
+  }
+  .number {
+    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 0.8;
+    letter-spacing: -1px;
+  }
+  .title{
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .text{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 300;
+  } 
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-top: 760px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+    </style>
+</body>
+<footer class="footer">
+    <div class="logo">
+        <span class="dot"></span>@2026 Bridge Collective
+      </div>
+      <p>Registered charity 12345678</p>
+</footer>
+</html>
